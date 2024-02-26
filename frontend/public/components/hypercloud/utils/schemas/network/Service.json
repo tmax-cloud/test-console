@@ -1,0 +1,322 @@
+{
+    "description": "%Service.json",
+    "properties": {
+        "apiVersion": {
+            "description": "%Service.json.properties.apiVersion",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "kind": {
+            "description": "%Service.json.properties.kind",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "metadata": {
+            "description": "%Service.json.properties.metadata",
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "annotations": {
+                    "description": "%Service.json.properties.metadata.properties.annotations",
+                    "type": [
+                        "object",
+                        "null"
+                    ],
+                    "additionalProperties": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "creationTimestamp": {
+                    "description": "%Service.json.properties.metadata.properties.creationTimestamp"
+                },
+                "deletionGracePeriodSeconds": {
+                    "description": "%Service.json.properties.metadata.properties.deletionGracePeriodSeconds",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "deletionTimestamp": {
+                    "description": "%Service.json.properties.metadata.properties.deletionTimestamp"
+                },
+                "finalizers": {
+                    "description": "%Service.json.properties.metadata.properties.finalizers",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "generateName": {
+                    "description": "%Service.json.properties.metadata.properties.generateName",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "generation": {
+                    "description": "%Service.json.properties.metadata.properties.generation",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "labels": {
+                    "description": "%Service.json.properties.metadata.properties.labels",
+                    "type": [
+                        "object",
+                        "null"
+                    ],
+                    "additionalProperties": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "managedFields": {
+                    "description": "%Service.json.properties.metadata.properties.managedFields",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "%Service.json.properties.metadata.properties.name",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "namespace": {
+                    "description": "%Service.json.properties.metadata.properties.namespace",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ownerReferences": {
+                    "description": "%Service.json.properties.metadata.properties.ownerReferences",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "resourceVersion": {
+                    "description": "%Service.json.properties.metadata.properties.resourceVersion",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "selfLink": {
+                    "description": "%Service.json.properties.metadata.properties.selfLink",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "uid": {
+                    "description": "%Service.json.properties.metadata.properties.uid",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "spec": {
+            "description": "%Service.json.properties.spec",
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "allocateLoadBalancerNodePorts": {
+                    "description": "%Service.json.properties.spec.properties.allocateLoadBalancerNodePorts",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "clusterIP": {
+                    "description": "%Service.json.properties.spec.properties.clusterIP",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "clusterIPs": {
+                    "description": "%Service.json.properties.spec.properties.clusterIPs",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "externalIPs": {
+                    "description": "%Service.json.properties.spec.properties.externalIPs",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "externalName": {
+                    "description": "%Service.json.properties.spec.properties.externalName",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "externalTrafficPolicy": {
+                    "description": "%Service.json.properties.spec.properties.externalTrafficPolicy",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "healthCheckNodePort": {
+                    "description": "%Service.json.properties.spec.properties.healthCheckNodePort",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "internalTrafficPolicy": {
+                    "description": "%Service.json.properties.spec.properties.internalTrafficPolicy",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ipFamilies": {
+                    "description": "%Service.json.properties.spec.properties.ipFamilies",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "ipFamilyPolicy": {
+                    "description": "%Service.json.properties.spec.properties.ipFamilyPolicy",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loadBalancerClass": {
+                    "description": "%Service.json.properties.spec.properties.loadBalancerClass",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loadBalancerIP": {
+                    "description": "%Service.json.properties.spec.properties.loadBalancerIP",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "loadBalancerSourceRanges": {
+                    "description": "%Service.json.properties.spec.properties.loadBalancerSourceRanges",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "ports": {
+                    "description": "%Service.json.properties.spec.properties.ports",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publishNotReadyAddresses": {
+                    "description": "%Service.json.properties.spec.properties.publishNotReadyAddresses",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "selector": {
+                    "description": "%Service.json.properties.spec.properties.selector",
+                    "type": [
+                        "object",
+                        "null"
+                    ],
+                    "additionalProperties": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "sessionAffinity": {
+                    "description": "%Service.json.properties.spec.properties.sessionAffinity",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "sessionAffinityConfig": {
+                    "description": "%Service.json.properties.spec.properties.sessionAffinityConfig",
+                    "properties": {
+                        "clientIP": {
+                            "description": "%Service.json.properties.spec.properties.sessionAffinityConfig.properties.clientIP",
+                            "properties": {
+                                "description": "%Service.json.properties.spec.properties.sessionAffinityConfig.properties.clientIP.properties.timeoutSeconds",
+                                "timeoutSeconds": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "type": [
+                                "object",
+                                "null"
+                            ]
+                        }
+                    },
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                },
+                "type": {
+                    "description": "%Service.json.properties.spec.properties.type",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "status": {
+            "description": "%Service.json.properties.status",
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "conditions": {
+                    "description": "%Service.json.properties.status.properties.conditions",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "loadBalancer": {
+                    "description": "%Service.json.properties.status.properties.loadBalancer"
+                }
+            }
+        }
+    }
+}

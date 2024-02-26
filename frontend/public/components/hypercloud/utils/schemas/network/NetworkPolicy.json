@@ -1,0 +1,242 @@
+{
+    "description": "%NetworkPolicy.json",
+    "properties": {
+        "apiVersion": {
+            "description": "%NetworkPolicy.json.properties.apiVersion",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "kind": {
+            "description": "%NetworkPolicy.json.properties.kind",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "metadata": {
+            "description": "%NetworkPolicy.json.properties.metadata",
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "annotations": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.annotations",
+                    "type": [
+                        "object",
+                        "null"
+                    ],
+                    "additionalProperties": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "creationTimestamp": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.creationTimestamp"
+                },
+                "deletionGracePeriodSeconds": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.deletionGracePeriodSeconds",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "deletionTimestamp": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.deletionTimestamp"
+                },
+                "finalizers": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.finalizers",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "generateName": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.generateName",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "generation": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.generation",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "labels": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.labels",
+                    "type": [
+                        "object",
+                        "null"
+                    ],
+                    "additionalProperties": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "managedFields": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.managedFields",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.name",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "namespace": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.namespace",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ownerReferences": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.ownerReferences",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "resourceVersion": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.resourceVersion",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "selfLink": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.selfLink",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "uid": {
+                    "description": "%NetworkPolicy.json.properties.metadata.properties.uid",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "spec": {
+            "description": "%NetworkPolicy.json.properties.spec",
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "egress": {
+                    "description": "%NetworkPolicy.json.properties.spec.properties.egress",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "ingress": {
+                    "description": "%NetworkPolicy.json.properties.spec.properties.ingress",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "podSelector": {
+                    "description": "%NetworkPolicy.json.properties.spec.properties.podSelector",
+                    "properties": {
+                        "matchExpressions": {
+                            "description": "%NetworkPolicy.json.properties.spec.properties.podSelector.properties.matchExpressions",
+                            "items": {
+                                "description": "%NetworkPolicy.json.properties.spec.properties.podSelector.properties.matchExpressions.items",
+                                "properties": {
+                                    "key": {
+                                        "description": "%NetworkPolicy.json.properties.spec.properties.podSelector.properties.matchExpressions.items.properties.key",
+                                        "type": "string",
+                                        "x-kubernetes-patch-merge-key": "key",
+                                        "x-kubernetes-patch-strategy": "merge"
+                                    },
+                                    "operator": {
+                                        "description": "%NetworkPolicy.json.properties.spec.properties.podSelector.properties.matchExpressions.items.properties.operator",
+                                        "type": "string"
+                                    },
+                                    "values": {
+                                        "description": "%NetworkPolicy.json.properties.spec.properties.podSelector.properties.matchExpressions.items.properties.values",
+                                        "items": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
+                                        "type": [
+                                            "array",
+                                            "null"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "key",
+                                    "operator"
+                                ],
+                                "type": "object",
+                                "additionalProperties": false
+                            },
+                            "type": [
+                                "array",
+                                "null"
+                            ]
+                        },
+                        "matchLabels": {
+                            "additionalProperties": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "description": "%NetworkPolicy.json.properties.spec.properties.podSelector.properties.matchLabels",
+                            "type": "object"
+                        }
+                    },
+                    "type": "object",
+                    "x-kubernetes-map-type": "atomic",
+                    "additionalProperties": false
+                },
+                "policyTypes": {
+                    "description": "%NetworkPolicy.json.properties.spec.properties.policyTypes",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "status": {
+            "description": "%NetworkPolicy.json.properties.status",
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "conditions": {
+                    "description": "%NetworkPolicy.json.properties.status.properties.conditions",
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            }
+        }
+    }
+}
